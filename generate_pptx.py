@@ -6,7 +6,7 @@ from pptx.util import Emu
 DECK_DIR = os.path.dirname(os.path.abspath(__file__))
 HTML_FILE = os.path.join(DECK_DIR, "VeraCare_Deck.html")
 SCREENSHOT_DIR = os.path.join(DECK_DIR, "slide_screenshots")
-OUTPUT_PPTX = os.path.join(DECK_DIR, "VeraCare_Deck.pptx")
+OUTPUT_PPTX = os.path.join(DECK_DIR, "VeraCare_Pitch_Deck.pptx")
 SLIDE_W, SLIDE_H = 1920, 1080
 SCALE = 2  # render at 2x for crisp screenshots
 
