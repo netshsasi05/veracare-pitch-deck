@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VeraCare — Pitch Deck</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0A0F1C;--card:#111827;--teal:#22D3EE;--mint:#00E5A0;--coral:#FF6B6B;--amber:#FFB547;--white:#FFFFFF;--g1:#94A3B8;--g2:#64748B;--g3:#475569;--g4:#334155}
+html{background:#050510}
+body{font-family:'Inter',sans-serif;color:var(--white);-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center;padding:16px 0}
+
+.slide{
+  width:1920px;height:1080px;background:var(--bg);
+  position:relative;overflow:hidden;
+  display:flex;flex-direction:column;
+  padding:60px 88px 56px;
+  flex-shrink:0;
+  transform-origin:top center;
+}
+.slide-inner{display:flex;flex-direction:column;flex:1;min-height:0}
+
+.footer{position:absolute;bottom:20px;left:88px;right:88px;display:flex;justify-content:space-between;align-items:center;z-index:10}
+.footer .conf{font-size:14px;letter-spacing:4px;text-transform:uppercase;color:var(--g3);font-weight:500}
+.footer .logo-area{display:flex;align-items:center;gap:10px}
+.footer .logo-area img{height:34px;width:34px;object-fit:contain;border-radius:9px}
+.footer .logo-area span{font-size:17px;font-weight:700;color:var(--g2)}
+
+.lbl{font-size:16px;letter-spacing:6px;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:8px}
+.ttl{font-size:60px;font-weight:800;line-height:1.08;margin-bottom:6px;letter-spacing:-1px}
+.sub{font-size:24px;color:var(--g1);line-height:1.45;margin-bottom:20px;font-weight:300}
+
+.card{background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:18px}
+.glow{position:absolute;border-radius:50%;filter:blur(140px);pointer-events:none;z-index:0}
+
+.bullet{padding:6px 0 6px 28px;position:relative}
+.bullet::before{content:'';position:absolute;left:0;top:16px;width:8px;height:8px;border-radius:50%}
+.bullet-teal::before{background:var(--teal)}
+.bullet-mint::before{background:var(--mint)}
+.bullet-coral::before{background:var(--coral)}
+.bullet-amber::before{background:var(--amber)}
+
+.ico{display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ico svg{flex-shrink:0}
+</style>
+</head>
+<body>
+
+<!-- ===== SLIDE 1: COVER ===== -->
+<div class="slide" style="align-items:center;justify-content:center">
+  <div class="glow" style="width:800px;height:800px;background:radial-gradient(circle,rgba(34,211,238,.14),transparent 70%);top:-280px;right:-120px"></div>
+  <div class="glow" style="width:500px;height:500px;background:radial-gradient(circle,rgba(0,229,160,.08),transparent 70%);bottom:-160px;left:-80px"></div>
+  <div style="position:relative;z-index:2;text-align:center">
+    <div style="font-size:160px;font-weight:800;letter-spacing:-4px;line-height:1;background:linear-gradient(135deg,#fff 30%,var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent">VeraCare</div>
+    <div style="width:100px;height:5px;background:linear-gradient(90deg,var(--teal),var(--mint));margin:40px auto;border-radius:3px"></div>
+    <div style="font-size:22px;letter-spacing:12px;text-transform:uppercase;color:var(--g1);font-weight:400">The Future of Perioperative Care</div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 2: STORY ===== -->
+<div class="slide" style="padding:44px 80px 44px">
+  <div class="glow" style="width:600px;height:600px;background:radial-gradient(circle,rgba(255,107,107,.06),transparent 70%);top:-200px;right:-100px"></div>
+  <div class="lbl" style="margin-bottom:6px">Our Origin</div>
+  <div class="ttl" style="margin-bottom:20px">A Preventable Crisis in the OR</div>
+  <div class="slide-inner" style="position:relative;z-index:2;gap:0;margin-bottom:30px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;flex:1">
+      <div style="border-radius:14px;overflow:hidden;display:flex;align-items:center;justify-content:center">
+        <img src="story_tmc.png" style="width:100%;height:100%;object-fit:contain" alt="Texas Medical Center aerial view">
+      </div>
+      <div style="border-radius:14px;overflow:hidden;display:flex;align-items:center;justify-content:center">
+        <img src="story_patient.png" style="width:100%;height:100%;object-fit:contain" alt="Doctor consulting with stressed patient">
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 2B: TODAY TIMELINE ===== -->
+<div class="slide" style="padding:60px 88px 56px">
+  <div class="glow" style="width:600px;height:600px;background:radial-gradient(circle,rgba(255,107,107,.06),transparent 70%);top:-200px;left:-100px"></div>
+  <div class="glow" style="width:500px;height:500px;background:radial-gradient(circle,rgba(255,107,107,.05),transparent 70%);bottom:-160px;right:-80px"></div>
+  <div class="lbl">The Journey</div>
+  <div class="ttl" style="font-size:56px;margin-bottom:16px">Perioperative Process Today</div>
+  <div class="slide-inner" style="position:relative;z-index:2;justify-content:center">
+    <div style="position:relative;padding:0 20px;margin-top:-120px">
+      <div style="position:relative;height:320px">
+        <!-- Horizontal dashed line -->
+        <div style="position:absolute;top:140px;left:14px;right:14px;height:6px">
+          <svg width="100%" height="6" style="display:block"><line x1="0" y1="3" x2="100%" y2="3" stroke="var(--coral)" stroke-width="4" stroke-dasharray="18,14" opacity=".45"/></svg>
+        </div>
+
+        <!-- Dot 1 + label: Accepts Surgery at 0% -->
+        <div style="position:absolute;left:0;top:127px;width:32px;height:32px;border-radius:50%;background:var(--coral);box-shadow:0 0 24px rgba(255,107,107,.4)"></div>
+        <div style="position:absolute;left:0;top:170px;font-size:30px;font-weight:700;color:var(--white);line-height:1.25">Accepts<br>Surgery</div>
+
+        <!-- Dot 2 + label: Day of Surgery at 75% -->
+        <div style="position:absolute;left:75%;top:127px;width:32px;height:32px;border-radius:50%;background:var(--coral);box-shadow:0 0 24px rgba(255,107,107,.4);transform:translateX(-50%)"></div>
+        <div style="position:absolute;left:75%;top:170px;transform:translateX(-50%);text-align:center;font-size:30px;font-weight:700;color:var(--white);line-height:1.25">Day of<br>Surgery</div>
+
+        <!-- Dot 3 + label: Potential Readmission at 100% -->
+        <div style="position:absolute;right:0;top:127px;width:32px;height:32px;border-radius:50%;background:var(--coral);box-shadow:0 0 24px rgba(255,107,107,.4)"></div>
+        <div style="position:absolute;right:0;top:170px;text-align:right;font-size:30px;font-weight:700;color:var(--coral);line-height:1.25">Potential<br>Readmission</div>
+
+        <!-- Above: Providers get no visibility -->
+        <div style="position:absolute;left:37.5%;top:30px;transform:translateX(-50%);text-align:center">
+          <div style="font-size:30px;font-weight:600;color:var(--coral);opacity:.85;margin-bottom:6px">Providers get no visibility</div>
+          <svg width="2" height="35" style="margin:0 auto;display:block"><line x1="1" y1="0" x2="1" y2="35" stroke="var(--coral)" stroke-width="2" stroke-dasharray="6,5" opacity=".5"/></svg>
+        </div>
+
+        <!-- Above: Limited support -->
+        <div style="position:absolute;left:87.5%;top:30px;transform:translateX(-50%);text-align:center">
+          <div style="font-size:30px;font-weight:600;color:var(--coral);opacity:.85;margin-bottom:6px">Limited support</div>
+          <svg width="2" height="35" style="margin:0 auto;display:block"><line x1="1" y1="0" x2="1" y2="35" stroke="var(--coral)" stroke-width="2" stroke-dasharray="6,5" opacity=".5"/></svg>
+        </div>
+
+        <!-- Below: Patients are on their own -->
+        <div style="position:absolute;left:37.5%;top:160px;transform:translateX(-50%);text-align:center">
+          <svg width="2" height="35" style="margin:0 auto;display:block"><line x1="1" y1="0" x2="1" y2="35" stroke="var(--coral)" stroke-width="2" stroke-dasharray="6,5" opacity=".5"/></svg>
+          <div style="font-size:30px;color:var(--coral);font-weight:600;opacity:.85;margin-top:6px">Patients are on their own</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 3: PROBLEM ===== -->
+<div class="slide">
+  <div class="glow" style="width:600px;height:600px;background:radial-gradient(circle,rgba(255,107,107,.08),transparent 70%);top:-180px;left:-120px"></div>
+  <div class="lbl">The Challenge</div>
+  <div class="ttl" style="margin-bottom:28px">The Perioperative Problem</div>
+  <div class="slide-inner" style="position:relative;z-index:2;display:flex;align-items:center;justify-content:center;flex:1">
+    <div style="display:grid;grid-template-columns:1fr 80px 1fr;align-items:stretch;gap:0;height:750px;width:100%">
+      <!-- LEFT: Patients -->
+      <div style="background:linear-gradient(145deg,rgba(255,107,107,.04),transparent);border:1px solid rgba(255,107,107,.1);border-radius:20px;padding:36px 40px;height:100%;display:flex;flex-direction:column;justify-content:center">
+        <div style="font-size:26px;font-weight:700;color:var(--coral);margin-bottom:28px;text-align:center">Patient readiness + recovery is broken</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center">
+          <div style="text-align:center">
+            <div class="ico" style="width:74px;height:74px;border-radius:50%;background:rgba(255,107,107,.12);margin:0 auto 16px">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--coral)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M9 14l2 2 4-4"/></svg>
+            </div>
+            <div style="font-size:76px;font-weight:800;color:var(--coral);line-height:1">67%</div>
+            <div style="font-size:19px;color:var(--g2);line-height:1.5;margin-top:12px">of patients find the informed consent process unsatisfactory and confusing.</div>
+            <div style="font-size:13px;color:var(--g3);margin-top:8px;font-style:italic">PMCID: PMC3854804</div>
+          </div>
+          <div style="text-align:center">
+            <div class="ico" style="width:74px;height:74px;border-radius:50%;background:rgba(255,181,71,.12);margin:0 auto 16px">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/><path d="M10 17v4"/><path d="M14 17v4"/></svg>
+            </div>
+            <div style="font-size:76px;font-weight:800;color:var(--amber);line-height:1">80%</div>
+            <div style="font-size:19px;color:var(--g2);line-height:1.5;margin-top:12px">of medical information is forgotten immediately by patients.</div>
+            <div style="font-size:13px;color:var(--g3);margin-top:8px;font-style:italic">PMCID: PMC539473</div>
+          </div>
+        </div>
+      </div>
+      <!-- ARROW -->
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+      </div>
+      <!-- RIGHT: Providers -->
+      <div style="background:linear-gradient(145deg,rgba(34,211,238,.04),transparent);border:1px solid rgba(34,211,238,.1);border-radius:20px;padding:36px 40px;height:100%;display:flex;flex-direction:column;justify-content:center">
+        <div style="font-size:26px;font-weight:700;color:var(--teal);margin-bottom:28px;text-align:center">...and providers pay the price</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center">
+          <div style="text-align:center">
+            <div class="ico" style="width:74px;height:74px;border-radius:50%;background:rgba(34,211,238,.12);margin:0 auto 16px">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+            </div>
+            <div style="font-size:68px;font-weight:800;color:var(--teal);line-height:1">1 in 5</div>
+            <div style="font-size:19px;color:var(--g2);line-height:1.5;margin-top:12px">readmissions are preventable, costing ~$300M annually.</div>
+            <div style="font-size:13px;color:var(--g3);margin-top:8px;font-style:italic">PMCID: PMC8044735</div>
+          </div>
+          <div style="text-align:center">
+            <div class="ico" style="width:74px;height:74px;border-radius:50%;background:rgba(0,229,160,.12);margin:0 auto 16px">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div style="font-size:64px;font-weight:800;color:var(--mint);line-height:1">$37<span style="font-size:38px">/min</span></div>
+            <div style="font-size:19px;color:var(--g2);line-height:1.5;margin-top:12px">cost of OR time. Cancellations directly erode surgical revenue.</div>
+            <div style="font-size:13px;color:var(--g3);margin-top:8px;font-style:italic">PMCID: PMC5875376</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 4: ROOT CAUSE (DEEPER PROBLEM) ===== -->
+<div class="slide">
+  <div class="glow" style="width:500px;height:500px;background:radial-gradient(circle,rgba(255,107,107,.06),transparent 70%);bottom:-160px;right:-80px"></div>
+  <div class="lbl">Root Cause</div>
+  <div class="ttl">The Deeper Problem: Perioperative Care is Broken</div>
+  <div class="slide-inner" style="position:relative;z-index:2;justify-content:center">
+    <!-- Top two cards -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:stretch;width:100%">
+      <div class="card" style="padding:52px 44px;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center">
+        <div class="ico" style="width:100px;height:100px;border-radius:50%;background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.15);margin-bottom:24px">
+          <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <div style="font-size:36px;font-weight:800;margin-bottom:16px;line-height:1.18">The Black Box</div>
+        <div style="font-size:24px;color:var(--g1);line-height:1.6">Patient readiness + recovery is a black box.</div>
+      </div>
+      <div class="card" style="padding:52px 44px;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center">
+        <div class="ico" style="width:100px;height:100px;border-radius:50%;background:rgba(255,181,71,.08);border:1px solid rgba(255,181,71,.15);margin-bottom:24px">
+          <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="8" height="8" rx="1"/><rect x="14" y="3" width="8" height="8" rx="1"/><rect x="2" y="13" width="8" height="8" rx="1"/><rect x="14" y="13" width="8" height="8" rx="1"/><line x1="10" y1="7" x2="14" y2="7"/><line x1="6" y1="11" x2="6" y2="13"/></svg>
+        </div>
+        <div style="font-size:36px;font-weight:800;margin-bottom:16px;line-height:1.18">Disconnected Workflows</div>
+        <div style="font-size:24px;color:var(--g1);line-height:1.6">Disconnected + fragmented tools.</div>
+      </div>
+    </div>
+    <!-- Branching connector -->
+    <div style="position:relative;height:120px;width:100%;flex-shrink:0;margin:16px 0">
+      <div style="position:absolute;left:25%;top:0;width:calc(25% + 2px);height:50%;border-left:4px solid var(--coral);border-bottom:4px solid var(--coral);border-bottom-left-radius:24px;opacity:0.7;box-sizing:border-box"></div>
+      <div style="position:absolute;right:25%;top:0;width:calc(25% + 2px);height:50%;border-right:4px solid var(--coral);border-bottom:4px solid var(--coral);border-bottom-right-radius:24px;opacity:0.7;box-sizing:border-box"></div>
+      <div style="position:absolute;left:50%;top:calc(50% - 2px);width:4px;height:calc(50% + 2px);background:var(--coral);opacity:0.7;transform:translateX(-50%)"></div>
+      <div style="position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:14px solid var(--coral);opacity:0.7"></div>
+    </div>
+    <!-- Bottom card -->
+    <div class="card" style="padding:44px 60px;text-align:center;display:flex;flex-direction:column;align-items:center;align-self:center">
+      <div class="ico" style="width:80px;height:80px;border-radius:50%;background:rgba(255,107,107,.08);border:1px solid rgba(255,107,107,.15);margin-bottom:20px">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--coral)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </div>
+      <div style="font-size:36px;font-weight:800;margin-bottom:12px;line-height:1.18">Reactive, Not Proactive</div>
+      <div style="font-size:24px;color:var(--g1);line-height:1.6">Providers are then subjected to be reactive, spend time chasing information, and reacting to avoidable situations.</div>
+    </div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 2C: WITH VERACARE TIMELINE ===== -->
+<div class="slide" style="padding:60px 88px 56px">
+  <div class="glow" style="width:600px;height:600px;background:radial-gradient(circle,rgba(0,229,160,.07),transparent 70%);top:-200px;right:-100px"></div>
+  <div class="glow" style="width:500px;height:500px;background:radial-gradient(circle,rgba(34,211,238,.06),transparent 70%);bottom:-160px;left:-80px"></div>
+  <div class="lbl">The Solution</div>
+  <div class="ttl" style="font-size:54px;margin-bottom:10px">How VeraCare Changes the Procedural Flow</div>
+  <div class="sub" style="font-size:22px;margin-bottom:0">Every step delivered through phone and SMS — no app, no portal</div>
+  <div class="slide-inner" style="position:relative;z-index:2;justify-content:center;gap:0">
+
+    <!-- TIMELINE SECTION -->
+    <div style="position:relative;padding:0 60px;margin-top:40px">
+
+      <!-- Channel badges ABOVE dots -->
+      <div style="display:flex;justify-content:space-between;margin-bottom:16px;padding:0 10px">
+        <div style="width:18%;text-align:center"><span style="font-size:13px;font-weight:700;letter-spacing:1.5px;padding:5px 14px;border-radius:6px;background:rgba(0,229,160,.12);color:var(--mint)">SMS</span></div>
+        <div style="width:18%;text-align:center"><span style="font-size:13px;font-weight:700;letter-spacing:1.5px;padding:5px 14px;border-radius:6px;background:rgba(34,211,238,.12);color:var(--teal)">PHONE</span></div>
+        <div style="width:18%;text-align:center"><span style="font-size:13px;font-weight:700;letter-spacing:1.5px;padding:5px 14px;border-radius:6px;background:rgba(0,229,160,.12);color:var(--mint)">SMS</span></div>
+        <div style="width:18%;text-align:center"><span style="font-size:13px;font-weight:700;letter-spacing:1.5px;padding:5px 14px;border-radius:6px;background:rgba(0,229,160,.12);color:var(--mint)">SMS</span></div>
+        <div style="width:18%;text-align:center"><span style="font-size:13px;font-weight:700;letter-spacing:1.5px;padding:5px 14px;border-radius:6px;background:rgba(0,229,160,.12);color:var(--mint)">SMS + Q&amp;A</span></div>
+      </div>
+
+      <!-- Connector lines from badges to dots -->
+      <div style="display:flex;justify-content:space-between;padding:0 10px;margin-bottom:0">
+        <div style="width:18%;text-align:center"><div style="width:2px;height:24px;background:var(--mint);opacity:.3;margin:0 auto"></div></div>
+        <div style="width:18%;text-align:center"><div style="width:2px;height:24px;background:var(--teal);opacity:.3;margin:0 auto"></div></div>
+        <div style="width:18%;text-align:center"><div style="width:2px;height:24px;background:var(--mint);opacity:.3;margin:0 auto"></div></div>
+        <div style="width:18%;text-align:center"><div style="width:2px;height:24px;background:var(--mint);opacity:.3;margin:0 auto"></div></div>
+        <div style="width:18%;text-align:center"><div style="width:2px;height:24px;background:var(--mint);opacity:.3;margin:0 auto"></div></div>
+      </div>
+
+      <!-- Timeline bar with dots -->
+      <div style="position:relative;height:56px;display:flex;align-items:center">
+        <div style="position:absolute;left:0;right:0;top:50%;height:5px;background:linear-gradient(90deg,var(--mint),var(--teal) 60%,var(--mint));border-radius:3px;opacity:.5;transform:translateY(-50%)"></div>
+        <div style="position:absolute;left:calc(10% - 16px);top:50%;width:32px;height:32px;border-radius:50%;background:var(--mint);box-shadow:0 0 24px rgba(0,229,160,.5);transform:translateY(-50%)"></div>
+        <div style="position:absolute;left:calc(30% - 16px);top:50%;width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--mint),var(--teal));box-shadow:0 0 24px rgba(34,211,238,.45);transform:translateY(-50%)"></div>
+        <div style="position:absolute;left:calc(50% - 16px);top:50%;width:32px;height:32px;border-radius:50%;background:var(--teal);box-shadow:0 0 24px rgba(34,211,238,.5);transform:translateY(-50%)"></div>
+        <div style="position:absolute;left:calc(70% - 16px);top:50%;width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--mint));box-shadow:0 0 24px rgba(34,211,238,.45);transform:translateY(-50%)"></div>
+        <div style="position:absolute;left:calc(90% - 16px);top:50%;width:32px;height:32px;border-radius:50%;background:var(--mint);box-shadow:0 0 24px rgba(0,229,160,.5);transform:translateY(-50%)"></div>
+      </div>
+
+      <!-- Stage names BELOW dots -->
+      <div style="display:flex;justify-content:space-between;margin-top:20px;padding:0 10px">
+        <div style="width:18%;text-align:center;font-size:20px;font-weight:700;color:var(--white);line-height:1.3">Scheduling</div>
+        <div style="width:18%;text-align:center;font-size:20px;font-weight:700;color:var(--white);line-height:1.3">Education Call</div>
+        <div style="width:18%;text-align:center;font-size:20px;font-weight:700;color:var(--white);line-height:1.3">Pre-Op Prep</div>
+        <div style="width:18%;text-align:center;font-size:20px;font-weight:700;color:var(--white);line-height:1.3">Day of Surgery</div>
+        <div style="width:18%;text-align:center;font-size:20px;font-weight:700;color:var(--white);line-height:1.3">Recovery</div>
+      </div>
+
+      <!-- One-liner descriptions -->
+      <div style="display:flex;justify-content:space-between;margin-top:12px;padding:0 10px">
+        <div style="width:18%;text-align:center;font-size:16px;color:var(--g1);line-height:1.45">Confirms contact, maps plan to patient automatically</div>
+        <div style="width:18%;text-align:center;font-size:16px;color:var(--g1);line-height:1.45">Walks through procedure with teach-back questions</div>
+        <div style="width:18%;text-align:center;font-size:16px;color:var(--g1);line-height:1.45">Timed reminders for meds, Rx, showers, fasting</div>
+        <div style="width:18%;text-align:center;font-size:16px;color:var(--g1);line-height:1.45">Morning safety check before arrival</div>
+        <div style="width:18%;text-align:center;font-size:16px;color:var(--g1);line-height:1.45">Daily check-ins, drain tracking, grounded Q&amp;A</div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 8: OUR EDGE + PHONE MOCKUP ===== -->
+<div class="slide" style="padding:48px 88px 48px">
+  <div class="glow" style="width:600px;height:600px;background:radial-gradient(circle,rgba(0,229,160,.07),transparent 70%);top:-180px;right:-100px"></div>
+  <div class="glow" style="width:500px;height:500px;background:radial-gradient(circle,rgba(34,211,238,.06),transparent 70%);bottom:-140px;left:-80px"></div>
+  <div class="lbl">Our Edge</div>
+  <div class="ttl" style="font-size:48px;margin-bottom:8px">VeraCare meets patients where they are</div>
+  <div class="sub" style="font-size:21px;margin-bottom:16px">No app to download, no portal to log into — just a helpful text thread in your practice's voice</div>
+  <div class="slide-inner" style="position:relative;z-index:2;gap:0">
+
+    <div style="display:grid;grid-template-columns:420px 1fr;gap:56px;align-items:center;flex:1">
+
+      <!-- LEFT: Phone Mockup -->
+      <div style="display:flex;justify-content:center">
+        <div style="position:relative;width:340px;height:720px;border-radius:44px;border:3px solid rgba(255,255,255,.12);background:rgba(0,0,0,.6);box-shadow:0 24px 80px rgba(0,0,0,.5),inset 0 0 0 1px rgba(255,255,255,.04);padding:16px 14px;display:flex;flex-direction:column">
+          <!-- Notch -->
+          <div style="width:120px;height:28px;background:rgba(0,0,0,.9);border-radius:0 0 16px 16px;margin:0 auto 12px;position:relative;top:-16px"></div>
+          <!-- Status bar -->
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:0 8px;margin-bottom:12px;margin-top:-8px">
+            <span style="font-size:12px;color:var(--g2);font-weight:600">9:41 AM</span>
+            <span style="font-size:12px;color:var(--g2);font-weight:600">Dr. Jejurikar's Office</span>
+          </div>
+          <!-- Chat area -->
+          <div style="flex:1;display:flex;flex-direction:column;gap:10px;overflow:hidden;padding:0 4px">
+            <!-- VeraCare msg 1 -->
+            <div style="align-self:flex-start;max-width:88%;padding:12px 16px;border-radius:18px 18px 18px 4px;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.15)">
+              <div style="font-size:13px;color:var(--white);line-height:1.45">Hi Maria, this is Dr. Jejurikar's office at Midwest Plastic Surgery. I'll help you stay on track before and after your tummy tuck with reminders by text. Is this the best number to reach you?</div>
+            </div>
+            <!-- Patient reply 1 -->
+            <div style="align-self:flex-end;max-width:65%;padding:12px 16px;border-radius:18px 18px 4px 18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.06)">
+              <div style="font-size:13px;color:var(--g1);line-height:1.45">Yes it is!</div>
+            </div>
+            <!-- VeraCare msg 2 -->
+            <div style="align-self:flex-start;max-width:88%;padding:12px 16px;border-radius:18px 18px 18px 4px;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.15)">
+              <div style="font-size:13px;color:var(--white);line-height:1.45">Hi Maria, starting today please stop ibuprofen, aspirin, and fish oil until after surgery. Tylenol is fine if you need something. Let me know if you take any of these regularly.</div>
+            </div>
+            <!-- Patient reply 2 -->
+            <div style="align-self:flex-end;max-width:65%;padding:12px 16px;border-radius:18px 18px 4px 18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.06)">
+              <div style="font-size:13px;color:var(--g1);line-height:1.45">Done, stopped all of them</div>
+            </div>
+            <!-- VeraCare msg 3 -->
+            <div style="align-self:flex-start;max-width:88%;padding:12px 16px;border-radius:18px 18px 18px 4px;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.15)">
+              <div style="font-size:13px;color:var(--white);line-height:1.45">Good morning Maria. Quick safety check: were you able to stay fasting since last night?</div>
+            </div>
+            <!-- Patient reply 3 -->
+            <div style="align-self:flex-end;max-width:65%;padding:12px 16px;border-radius:18px 18px 4px 18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.06)">
+              <div style="font-size:13px;color:var(--g1);line-height:1.45">Yes, all good!</div>
+            </div>
+          </div>
+          <!-- Input bar -->
+          <div style="margin-top:12px;padding:10px 16px;border-radius:24px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;gap:8px">
+            <span style="font-size:13px;color:var(--g3)">Message...</span>
+            <div style="margin-left:auto;width:28px;height:28px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--bg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Feature Pillars -->
+      <div style="display:flex;flex-direction:column;gap:32px;justify-content:center">
+        <!-- Pillar 1 -->
+        <div style="display:flex;gap:28px;align-items:center;padding:44px 48px;border-radius:20px;background:rgba(0,229,160,.04);border:1px solid rgba(0,229,160,.1)">
+          <div class="ico" style="width:96px;height:96px;border-radius:50%;background:rgba(0,229,160,.12);flex-shrink:0">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div>
+            <div style="font-size:36px;font-weight:700;color:var(--white);margin-bottom:10px">Adaptive Readiness + Recovery Tracking</div>
+            <div style="font-size:24px;color:var(--g1);line-height:1.5">Real-time visibility into patient preparation and recovery milestones.</div>
+          </div>
+        </div>
+        <!-- Pillar 2 -->
+        <div style="display:flex;gap:28px;align-items:center;padding:44px 48px;border-radius:20px;background:rgba(34,211,238,.04);border:1px solid rgba(34,211,238,.1)">
+          <div class="ico" style="width:96px;height:96px;border-radius:50%;background:rgba(34,211,238,.12);flex-shrink:0">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div>
+            <div style="font-size:36px;font-weight:700;color:var(--white);margin-bottom:10px">Adaptive Communication / Outreach</div>
+            <div style="font-size:24px;color:var(--g1);line-height:1.5">Outreach that adapts to patient engagement and escalates when needed.</div>
+          </div>
+        </div>
+        <!-- Pillar 3 -->
+        <div style="display:flex;gap:28px;align-items:center;padding:44px 48px;border-radius:20px;background:rgba(255,181,71,.04);border:1px solid rgba(255,181,71,.1)">
+          <div class="ico" style="width:96px;height:96px;border-radius:50%;background:rgba(255,181,71,.12);flex-shrink:0">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div>
+            <div style="font-size:36px;font-weight:700;color:var(--white);margin-bottom:10px">Adaptive Scheduling Support</div>
+            <div style="font-size:24px;color:var(--g1);line-height:1.5">Readiness data drives smarter scheduling and fewer cancellations.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 6: COMPETITION ===== -->
+<div class="slide">
+  <div class="glow" style="width:600px;height:600px;background:radial-gradient(circle,rgba(34,211,238,.08),transparent 70%);top:-200px;right:-100px"></div>
+  <div class="glow" style="width:400px;height:400px;background:radial-gradient(circle,rgba(0,229,160,.06),transparent 70%);bottom:-120px;left:-60px"></div>
+  <div class="lbl">Landscape</div>
+  <div class="ttl">Competitive Landscape</div>
+  <div class="sub">VeraCare bridges perioperative operations with real-world patient behavior outside the hospital.</div>
+  <div class="slide-inner" style="position:relative;z-index:2">
+    <div style="flex:1;display:flex;align-items:center;justify-content:center">
+      <div style="display:flex;flex-direction:column;align-items:center;width:100%">
+        <!-- Chart wrapper -->
+        <div style="position:relative">
+          <!-- Quadrant box -->
+          <div style="position:relative;width:1500px;height:680px;border-radius:18px;background:rgba(255,255,255,.012);border:1px solid rgba(255,255,255,.05);overflow:visible">
+            <!-- Quadrant tints -->
+            <div style="position:absolute;top:0;left:0;width:50%;height:50%;background:rgba(255,107,107,.015);border-radius:18px 0 0 0"></div>
+            <div style="position:absolute;top:0;right:0;width:50%;height:50%;background:rgba(0,229,160,.025);border-radius:0 18px 0 0"></div>
+            <div style="position:absolute;bottom:0;left:0;width:50%;height:50%;background:rgba(255,255,255,.005);border-radius:0 0 0 18px"></div>
+            <div style="position:absolute;bottom:0;right:0;width:50%;height:50%;background:rgba(34,211,238,.015);border-radius:0 0 18px 0"></div>
+
+            <!-- Vertical axis line -->
+            <div style="position:absolute;left:50%;top:0;bottom:0;width:2px;background:rgba(255,255,255,.07);transform:translateX(-1px)"></div>
+            <!-- Horizontal axis line -->
+            <div style="position:absolute;top:50%;left:0;right:0;height:2px;background:rgba(255,255,255,.07);transform:translateY(-1px)"></div>
+
+            <!-- Y-axis label on LEFT side of graph, vertical, arrows pointing up and down -->
+            <div style="position:absolute;left:14px;top:50%;transform:translateY(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:6px">
+              <span style="font-size:18px;color:var(--mint);line-height:1">&#9650;</span>
+              <span style="font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--mint);font-weight:700;writing-mode:vertical-lr;transform:rotate(180deg)">Patient Behavior &amp; Activation</span>
+              <span style="font-size:18px;color:var(--mint);line-height:1">&#9660;</span>
+            </div>
+            <!-- X-axis label on horizontal line (right end) -->
+            <div style="position:absolute;top:50%;right:14px;transform:translateY(-50%);z-index:3">
+              <span style="font-size:14px;letter-spacing:4px;text-transform:uppercase;color:var(--teal);font-weight:700;background:var(--bg);padding:4px 12px">&#9664; Perioperative Operations &#9654;</span>
+            </div>
+
+            <!-- VeraCare (top-right, dominant) -->
+            <div style="position:absolute;left:80%;top:16%;transform:translate(-50%,-50%);text-align:center;z-index:5">
+              <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--mint));margin:0 auto 8px;box-shadow:0 0 40px rgba(34,211,238,.55),0 0 80px rgba(0,229,160,.2)"></div>
+              <div style="font-size:26px;font-weight:800;color:var(--white);text-shadow:0 2px 12px rgba(0,0,0,.5)">VeraCare</div>
+            </div>
+
+            <!-- TOP-LEFT: Patient behavior / low periop ops — coral -->
+            <div style="position:absolute;left:16%;top:22%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(255,107,107,.3);border:3px solid var(--coral);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--coral)">Memora</div>
+            </div>
+            <div style="position:absolute;left:30%;top:30%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(255,107,107,.3);border:3px solid var(--coral);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--coral)">Wellth</div>
+            </div>
+            <div style="position:absolute;left:22%;top:38%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(255,107,107,.3);border:3px solid var(--coral);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--coral)">Framewise</div>
+            </div>
+            <div style="position:absolute;left:8%;top:32%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(255,107,107,.3);border:3px solid var(--coral);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--coral)">Fabric</div>
+            </div>
+            <div style="position:absolute;left:36%;top:18%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(255,107,107,.3);border:3px solid var(--coral);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--coral)">Luma</div>
+            </div>
+
+            <!-- CENTER: Digital surgical pathways — amber -->
+            <div style="position:absolute;left:40%;top:48%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(255,181,71,.3);border:3px solid var(--amber);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--amber)">SeamlessMD</div>
+            </div>
+            <div style="position:absolute;left:58%;top:42%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(255,181,71,.3);border:3px solid var(--amber);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--amber)">Force</div>
+            </div>
+            <div style="position:absolute;left:36%;top:58%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(255,181,71,.3);border:3px solid var(--amber);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--amber)">Twistle</div>
+            </div>
+            <div style="position:absolute;left:52%;top:55%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(255,181,71,.3);border:3px solid var(--amber);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--amber)">GetWell</div>
+            </div>
+
+            <!-- BOTTOM-RIGHT: Periop ops focused / low patient behavior — teal -->
+            <div style="position:absolute;left:70%;top:70%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(34,211,238,.3);border:3px solid var(--teal);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--teal)">Qventus</div>
+            </div>
+            <div style="position:absolute;left:86%;top:64%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(34,211,238,.3);border:3px solid var(--teal);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--teal)">LeanTaaS</div>
+            </div>
+            <div style="position:absolute;left:76%;top:80%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(34,211,238,.3);border:3px solid var(--teal);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--teal)">Apella</div>
+            </div>
+            <div style="position:absolute;left:62%;top:82%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(34,211,238,.3);border:3px solid var(--teal);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--teal)">Caresyntax</div>
+            </div>
+            <div style="position:absolute;left:90%;top:76%;transform:translate(-50%,-50%);text-align:center">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(34,211,238,.3);border:3px solid var(--teal);margin:0 auto 5px"></div>
+              <div style="font-size:18px;font-weight:600;color:var(--teal)">Opmed.ai</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 9: DOWNSTREAM VALUE ===== -->
+<div class="slide">
+  <div class="glow" style="width:500px;height:500px;background:radial-gradient(circle,rgba(34,211,238,.06),transparent 70%);top:-140px;left:-80px"></div>
+  <div class="lbl">Value</div>
+  <div class="ttl" style="font-size:46px;max-width:1500px">Quantified patient readiness and recovery creates real operational, clinical, and legal value</div>
+  <div class="slide-inner" style="position:relative;z-index:2;justify-content:center">
+    <div style="display:flex;flex-direction:column;gap:32px;flex:1;justify-content:center">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px;align-items:stretch">
+        <div class="card" style="padding:44px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center">
+          <div class="ico" style="width:100px;height:100px;border-radius:50%;background:rgba(0,229,160,.08);border:1px solid rgba(0,229,160,.15);margin-bottom:24px">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div style="font-size:30px;font-weight:800;margin-bottom:16px;line-height:1.18">Better Outcomes</div>
+          <div style="font-size:21px;color:var(--g1);line-height:1.6">Proactive support throughout the perioperative journey drives <strong style="color:var(--white)">better patient outcomes</strong>.</div>
+        </div>
+        <div class="card" style="padding:44px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center">
+          <div class="ico" style="width:100px;height:100px;border-radius:50%;background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.15);margin-bottom:24px">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M9 16l2 2 4-4"/></svg>
+          </div>
+          <div style="font-size:30px;font-weight:800;margin-bottom:16px;line-height:1.18">Reduced Delays &amp; Cancellations</div>
+          <div style="font-size:21px;color:var(--g1);line-height:1.6">Catches readiness issues earlier, reducing same-day cancellations and underutilized <strong style="color:var(--white)">OR time</strong>.</div>
+        </div>
+        <div class="card" style="padding:44px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center">
+          <div class="ico" style="width:100px;height:100px;border-radius:50%;background:rgba(255,107,107,.08);border:1px solid rgba(255,107,107,.15);margin-bottom:24px">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="var(--coral)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div style="font-size:30px;font-weight:800;margin-bottom:16px;line-height:1.18">Reduced Readmission Risk</div>
+          <div style="font-size:21px;color:var(--g1);line-height:1.6">Recovery tracking gives visibility into patient progress.</div>
+        </div>
+        <div class="card" style="padding:44px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center">
+          <div class="ico" style="width:100px;height:100px;border-radius:50%;background:rgba(255,181,71,.08);border:1px solid rgba(255,181,71,.15);margin-bottom:24px">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <div style="font-size:30px;font-weight:800;margin-bottom:16px;line-height:1.18">Liability &amp; Claims Support</div>
+          <div style="font-size:21px;color:var(--g1);line-height:1.6">Evidenced records of what the patient was <strong style="color:var(--white)">told, shown, completed</strong>, and what outreach occurred. Supports claims appeals.</div>
+        </div>
+      </div>
+      <div class="card" style="padding:44px 60px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div class="ico" style="width:110px;height:110px;border-radius:50%;background:rgba(255,181,71,.08);border:1px solid rgba(255,181,71,.15);margin-bottom:20px">
+          <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+        <div style="font-size:34px;font-weight:800;margin-bottom:12px;line-height:1.18">Proprietary Data Moat</div>
+        <div style="font-size:23px;color:var(--g1);line-height:1.6">The moat is <strong style="color:var(--white)">operational intelligence</strong> from continuous visibility into the patient journey — powering all adaptive systems.</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 10: MARKET ===== -->
+<div class="slide">
+  <div class="lbl">Opportunity</div>
+  <div class="ttl" style="font-size:50px">A Multi-Billion Dollar Perioperative Administration Market</div>
+  <div class="sub">Defensible growth across U.S. surgical operations and perioperative management</div>
+  <div class="slide-inner">
+    <div style="display:grid;grid-template-columns:480px 1fr;gap:80px;align-items:center;flex:1">
+      <div style="position:relative;width:460px;height:460px;margin:0 auto">
+        <div style="width:460px;height:460px;border-radius:50%;background:rgba(34,211,238,.05);border:2px solid rgba(34,211,238,.15);position:absolute;display:flex;align-items:flex-start;justify-content:center;padding-top:40px"><span style="font-size:18px;letter-spacing:5px;color:var(--g2);font-weight:600">TAM</span></div>
+        <div style="width:310px;height:310px;border-radius:50%;background:rgba(34,211,238,.08);border:2px solid rgba(34,211,238,.25);position:absolute;bottom:16px;left:75px;display:flex;align-items:flex-start;justify-content:center;padding-top:36px"><span style="font-size:18px;letter-spacing:5px;color:var(--g1);font-weight:600">SAM</span></div>
+        <div style="width:160px;height:160px;border-radius:50%;background:rgba(0,229,160,.14);border:2px solid rgba(0,229,160,.4);position:absolute;bottom:28px;left:150px;display:flex;align-items:center;justify-content:center"><span style="font-size:18px;letter-spacing:5px;color:var(--mint);font-weight:700">SOM</span></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:48px">
+        <div style="display:flex;gap:22px;align-items:start">
+          <div style="font-size:17px;padding:8px 20px;border-radius:8px;background:rgba(34,211,238,.15);color:var(--teal);font-weight:700;margin-top:10px;flex-shrink:0;letter-spacing:1px">TAM</div>
+          <div><div style="font-size:64px;font-weight:800;color:var(--teal);letter-spacing:-1px">$17.6B</div><div style="font-size:24px;color:var(--g1);line-height:1.5;margin-top:8px">Annual administrative pain across U.S. perioperative sites &#8212; driven by preventable readmissions, cancellations, and first-case delays across community hospitals and ASCs.</div></div>
+        </div>
+        <div style="display:flex;gap:22px;align-items:start">
+          <div style="font-size:17px;padding:8px 20px;border-radius:8px;background:rgba(34,211,238,.10);color:var(--teal);font-weight:700;margin-top:10px;flex-shrink:0;letter-spacing:1px">SAM</div>
+          <div><div style="font-size:64px;font-weight:800;color:var(--teal);letter-spacing:-1px">$3.59B</div><div style="font-size:24px;color:var(--g1);line-height:1.5;margin-top:8px">Core U.S. software opportunity across 6,436 ASCs and 5,121 community hospitals, assuming future-state contract values of $200K per ASC and $450K per hospital.</div></div>
+        </div>
+        <div style="display:flex;gap:22px;align-items:start">
+          <div style="font-size:17px;padding:8px 20px;border-radius:8px;background:rgba(0,229,160,.12);color:var(--mint);font-weight:700;margin-top:10px;flex-shrink:0;letter-spacing:1px">SOM</div>
+          <div><div style="font-size:64px;font-weight:800;color:var(--mint);letter-spacing:-1px">$95M&#8211;$212.5M <span style="font-size:28px;font-weight:400;color:var(--g1)">ARR</span></div><div style="font-size:24px;color:var(--g1);line-height:1.5;margin-top:8px">Attainable near-to-mid-term revenue: 250&#8211;500 ASCs and 100&#8211;250 hospitals.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 11: GTM ===== -->
+<div class="slide">
+  <div class="glow" style="width:600px;height:600px;background:radial-gradient(circle,rgba(34,211,238,.08),transparent 70%);top:-180px;right:-100px"></div>
+  <div class="lbl">Strategy</div>
+  <div class="ttl" style="font-size:48px;max-width:1600px">Go-To-Market: 18-Month Path to Full Operations</div>
+  <div class="slide-inner" style="justify-content:center;align-items:stretch">
+    <div id="gtm-wrap" style="position:relative;width:100%;flex:1;overflow:visible">
+      <svg id="gtm-svg" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:visible">
+        <defs>
+          <marker id="gtm-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M0,1 L10,5 L0,9" fill="none" stroke="rgba(167,139,250,.35)" stroke-width="1.5"/>
+          </marker>
+        </defs>
+        <line id="gl-trunk" stroke="rgba(34,211,238,.28)" stroke-width="5" stroke-linecap="round"/>
+        <polyline id="gl-upper" fill="none" stroke="rgba(255,181,71,.32)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <polyline id="gl-lower" fill="none" stroke="rgba(255,107,107,.32)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <line id="gl-tail" stroke="rgba(34,211,238,.28)" stroke-width="5" stroke-linecap="round"/>
+        <line id="gl-continue" stroke="rgba(167,139,250,.22)" stroke-width="4" stroke-dasharray="10,7" stroke-linecap="round" marker-end="url(#gtm-arrow)"/>
+        <line id="gl-date4" stroke="rgba(255,181,71,.2)" stroke-width="1.5" stroke-linecap="round"/>
+        <line id="gl-date5" stroke="rgba(255,107,107,.2)" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+
+      <!-- "HERE NOW" arrow above Node 3 — centered: node3 left:360, width:240, dotCx=480, badge width:110, so left=480-55=425 -->
+      <div style="position:absolute;left:425px;top:388px;width:110px;text-align:center;z-index:3;display:flex;flex-direction:column;align-items:center">
+        <div style="padding:6px 16px;border-radius:8px;background:var(--mint);font-size:14px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--bg)">Here Now</div>
+        <div style="font-size:18px;color:var(--mint);line-height:1;margin-top:2px">▼</div>
+      </div>
+
+      <!-- Date: May 2026 above Node 3 — dotCx=520, badge width:120, left=520-60=460 -->
+      <div style="position:absolute;left:420px;top:360px;width:120px;text-align:center;z-index:3;display:flex;flex-direction:column;align-items:center">
+        <div style="padding:5px 14px;border-radius:7px;background:rgba(0,229,160,.1);border:1px solid rgba(0,229,160,.15);font-size:14px;font-weight:700;color:var(--mint);white-space:nowrap">May 2026</div>
+        <div style="width:1px;height:20px;background:var(--mint);opacity:.25"></div>
+      </div>
+
+      <!-- Date: Aug 2026 centered between Nodes 4/5 — positioned by JS -->
+      <div id="gdate45" style="position:absolute;left:785px;width:100px;text-align:center;z-index:3;display:flex;flex-direction:column;align-items:center">
+        <div style="padding:5px 14px;border-radius:7px;background:rgba(255,181,71,.1);border:1px solid rgba(255,181,71,.15);font-size:14px;font-weight:700;color:var(--amber);white-space:nowrap">Aug 2026</div>
+      </div>
+
+      <!-- Date: Sep 2026 above Node 6 — dotCx=1090, badge width:100, left=1040 -->
+      <div style="position:absolute;left:1060px;top:390px;width:100px;text-align:center;z-index:3;display:flex;flex-direction:column;align-items:center">
+        <div style="padding:5px 14px;border-radius:7px;background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.15);font-size:14px;font-weight:700;color:var(--teal);white-space:nowrap">Sep 2026</div>
+        <div style="width:1px;height:20px;background:var(--teal);opacity:.25"></div>
+      </div>
+
+      <!-- Date: Apr 2027 above Node 7 — dotCx=1330, badge width:100, left=1280 -->
+      <div style="position:absolute;left:1320px;top:390px;width:100px;text-align:center;z-index:3;display:flex;flex-direction:column;align-items:center">
+        <div style="padding:5px 14px;border-radius:7px;background:rgba(0,229,160,.1);border:1px solid rgba(0,229,160,.15);font-size:14px;font-weight:700;color:var(--mint);white-space:nowrap">Apr 2027</div>
+        <div style="width:1px;height:20px;background:var(--mint);opacity:.25"></div>
+      </div>
+
+      <!-- Date: Oct 2027 above Node 8 — dotCx=1560, badge width:100, left=1510 -->
+      <div style="position:absolute;left:1570px;top:390px;width:100px;text-align:center;z-index:3;display:flex;flex-direction:column;align-items:center">
+        <div style="padding:5px 14px;border-radius:7px;background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.15);font-size:14px;font-weight:700;color:#a78bfa;white-space:nowrap">Oct 2027</div>
+        <div style="width:1px;height:20px;background:#a78bfa;opacity:.25"></div>
+      </div>
+
+      <!-- Node 1: MVP Complete -->
+      <div style="position:absolute;left:-20px;top:450px;width:90px;text-align:center;z-index:1">
+        <div id="gd1" style="width:58px;height:58px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;margin:0 auto;box-shadow:0 0 28px rgba(34,211,238,.45),0 0 56px rgba(34,211,238,.15)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div style="font-size:16px;font-weight:800;color:var(--white);margin-top:14px;line-height:1.25">MVP<br>Completed</div>
+      </div>
+
+      <!-- Node 2: Clinical Trials (dot → line → box below) -->
+      <div style="position:absolute;left:80px;top:450px;width:240px;text-align:center;z-index:1">
+        <div id="gd2" style="width:58px;height:58px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;margin:0 auto;box-shadow:0 0 28px rgba(34,211,238,.4),0 0 56px rgba(34,211,238,.12)">
+          <span style="font-size:24px;font-weight:800;color:var(--bg)">2</span>
+        </div>
+        <div style="width:2px;height:44px;background:var(--teal);opacity:.3;margin:0 auto"></div>
+        <div style="padding:16px 16px;border-radius:16px;background:rgba(34,211,238,.035);border:1px solid rgba(34,211,238,.12);backdrop-filter:blur(4px)">
+          <div style="font-size:19px;font-weight:800;color:var(--white);margin-bottom:8px">Clinical Trials</div>
+          <ul style="list-style:none;text-align:left">
+            <li class="bullet bullet-teal" style="font-size:16px;color:var(--g1);padding:3px 0 3px 18px;line-height:1.5"><strong style="color:var(--white)">Awaiting IRB approval</strong> at Carle &amp; Baylor Schools of Medicine</li>
+            <li class="bullet bullet-teal" style="font-size:16px;color:var(--g1);padding:3px 0 3px 18px;line-height:1.5">Data collection &amp; stakeholder exposure upon approval</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Node 3: Pilots (dot → line → box below) -->
+      <div style="position:absolute;left:360px;top:450px;width:240px;text-align:center;z-index:1">
+        <div id="gd3" style="width:58px;height:58px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center;margin:0 auto;box-shadow:0 0 28px rgba(0,229,160,.4),0 0 56px rgba(0,229,160,.12)">
+          <span style="font-size:24px;font-weight:800;color:var(--bg)">3</span>
+        </div>
+        <div style="width:2px;height:44px;background:var(--mint);opacity:.3;margin:0 auto"></div>
+        <div style="padding:16px 16px;border-radius:16px;background:rgba(0,229,160,.035);border:1px solid rgba(0,229,160,.12);backdrop-filter:blur(4px)">
+          <div style="font-size:19px;font-weight:800;color:var(--white);margin-bottom:8px">Pilots</div>
+          <ul style="list-style:none;text-align:left">
+            <li class="bullet bullet-mint" style="font-size:16px;color:var(--g1);padding:3px 0 3px 18px;line-height:1.5"><strong style="color:var(--white)">Implementing in 1 clinic</strong>, waiting on 2nd implementation</li>
+            <li class="bullet bullet-mint" style="font-size:16px;color:var(--g1);padding:3px 0 3px 18px;line-height:1.5">Live product validation with real surgical workflows</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Node 4: Commercial Sales (box above → line → dot) -->
+      <div style="position:absolute;left:650px;width:290px;text-align:center;z-index:1;display:flex;flex-direction:column;align-items:center" id="gn4">
+        <div style="padding:14px 16px;border-radius:16px;background:rgba(255,181,71,.035);border:1px solid rgba(255,181,71,.12);backdrop-filter:blur(4px);width:100%">
+          <div style="font-size:18px;font-weight:800;color:var(--white);margin-bottom:6px">Commercial Sales</div>
+          <ul style="list-style:none;text-align:left">
+            <li class="bullet bullet-amber" style="font-size:16px;color:var(--g1);padding:2px 0 2px 18px;line-height:1.5"><strong style="color:var(--white)">5 paying customers</strong> converted from waitlist</li>
+            <li class="bullet bullet-amber" style="font-size:16px;color:var(--g1);padding:2px 0 2px 18px;line-height:1.5">Single-physician &#8594; multi-physician centers</li>
+          </ul>
+        </div>
+        <div style="width:2px;height:44px;background:var(--amber);opacity:.3;flex-shrink:0"></div>
+        <div id="gd4" style="width:58px;height:58px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;box-shadow:0 0 28px rgba(255,181,71,.4),0 0 56px rgba(255,181,71,.12);flex-shrink:0">
+          <span style="font-size:24px;font-weight:800;color:var(--bg)">4</span>
+        </div>
+      </div>
+
+      <!-- Node 5: Evidence & Trust (dot → line → box below) -->
+      <div style="position:absolute;left:650px;width:290px;text-align:center;z-index:1" id="gn5">
+        <div id="gd5" style="width:58px;height:58px;border-radius:50%;background:var(--coral);display:flex;align-items:center;justify-content:center;margin:0 auto;box-shadow:0 0 28px rgba(255,107,107,.4),0 0 56px rgba(255,107,107,.12)">
+          <span style="font-size:24px;font-weight:800;color:var(--bg)">5</span>
+        </div>
+        <div style="width:2px;height:44px;background:var(--coral);opacity:.3;margin:0 auto"></div>
+        <div style="padding:14px 16px;border-radius:16px;background:rgba(255,107,107,.035);border:1px solid rgba(255,107,107,.12);backdrop-filter:blur(4px)">
+          <div style="font-size:18px;font-weight:800;color:var(--white);margin-bottom:6px">Evidence &amp; Trust</div>
+          <ul style="list-style:none;text-align:left">
+            <li class="bullet bullet-coral" style="font-size:16px;color:var(--g1);padding:2px 0 2px 18px;line-height:1.5"><strong style="color:var(--white)">8 hospitals</strong> conducting trials &amp; publishing</li>
+            <li class="bullet bullet-coral" style="font-size:16px;color:var(--g1);padding:2px 0 2px 18px;line-height:1.5">Build clinical evidence across specialties</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Node 6: Scale (dot → line → box below) -->
+      <div style="position:absolute;left:1000px;top:450px;width:220px;text-align:center;z-index:1">
+        <div id="gd6" style="width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--mint));display:flex;align-items:center;justify-content:center;margin:0 auto;box-shadow:0 0 28px rgba(34,211,238,.4),0 0 56px rgba(0,229,160,.12)">
+          <span style="font-size:24px;font-weight:800;color:var(--bg)">6</span>
+        </div>
+        <div style="width:2px;height:44px;background:var(--mint);opacity:.3;margin:0 auto"></div>
+        <div style="padding:16px 16px;border-radius:16px;background:rgba(34,211,238,.035);border:1px solid rgba(34,211,238,.12);backdrop-filter:blur(4px)">
+          <div style="font-size:19px;font-weight:800;color:var(--white);margin-bottom:8px">Scale</div>
+          <ul style="list-style:none;text-align:left">
+            <li class="bullet bullet-mint" style="font-size:16px;color:var(--g1);padding:3px 0 3px 18px;line-height:1.5">Build team &amp; org infrastructure</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Node 7: Non-Linear Growth (dot → line → box below) -->
+      <div style="position:absolute;left:1260px;top:450px;width:220px;text-align:center;z-index:1">
+        <div id="gd7" style="width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--mint),var(--teal));display:flex;align-items:center;justify-content:center;margin:0 auto;box-shadow:0 0 28px rgba(0,229,160,.4),0 0 56px rgba(0,229,160,.12)">
+          <span style="font-size:24px;font-weight:800;color:var(--bg)">7</span>
+        </div>
+        <div style="width:2px;height:44px;background:var(--mint);opacity:.3;margin:0 auto"></div>
+        <div style="padding:14px 16px;border-radius:16px;background:rgba(0,229,160,.035);border:1px solid rgba(0,229,160,.12);backdrop-filter:blur(4px)">
+          <div style="font-size:18px;font-weight:800;color:var(--white);margin-bottom:6px">Non-Linear Growth</div>
+          <ul style="list-style:none;text-align:left">
+            <li class="bullet bullet-mint" style="font-size:16px;color:var(--g1);padding:2px 0 2px 18px;line-height:1.5"><strong style="color:var(--white)">40 clinics</strong> represented across the U.S.</li>
+            <li class="bullet bullet-mint" style="font-size:16px;color:var(--g1);padding:2px 0 2px 18px;line-height:1.5">Expand sales reach &amp; connect with more customers</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Node 8: Acquire Hospital Customers (dot → line → box below) -->
+      <div style="position:absolute;left:1500px;top:450px;width:240px;text-align:center;z-index:1">
+        <div id="gd8" style="width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--teal),#a78bfa);display:flex;align-items:center;justify-content:center;margin:0 auto;box-shadow:0 0 28px rgba(34,211,238,.4),0 0 56px rgba(167,139,250,.15)">
+          <span style="font-size:24px;font-weight:800;color:var(--bg)">8</span>
+        </div>
+        <div style="width:2px;height:44px;background:var(--teal);opacity:.3;margin:0 auto"></div>
+        <div style="padding:14px 16px;border-radius:16px;background:rgba(167,139,250,.035);border:1px solid rgba(167,139,250,.12);backdrop-filter:blur(4px)">
+          <div style="font-size:18px;font-weight:800;color:var(--white);margin-bottom:6px">Acquire Hospital Customers</div>
+          <ul style="list-style:none;text-align:left">
+            <li class="bullet bullet-teal" style="font-size:16px;color:var(--g1);padding:2px 0 2px 18px;line-height:1.5"><strong style="color:var(--white)">3–5 hospitals</strong> as paying customers</li>
+            <li class="bullet bullet-teal" style="font-size:16px;color:var(--g1);padding:2px 0 2px 18px;line-height:1.5">Leverage trials &amp; case studies for enterprise sales</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE: BUSINESS MODEL ===== -->
+<div class="slide" style="padding:48px 88px 48px">
+  <div class="glow" style="width:600px;height:600px;background:radial-gradient(circle,rgba(34,211,238,.08),transparent 70%);top:-180px;right:-100px"></div>
+  <div class="glow" style="width:400px;height:400px;background:radial-gradient(circle,rgba(0,229,160,.06),transparent 70%);bottom:-120px;left:-60px"></div>
+  <div class="lbl" style="margin-bottom:8px">Business Model</div>
+  <div class="ttl" style="font-size:48px;max-width:1700px;margin-bottom:8px">Commercial Model &amp; Pricing Framework</div>
+  <div class="sub" style="margin-bottom:14px;font-size:21px;max-width:1600px">Meaningful platform contracts with included episode volume; usage and add-ons expand revenue as workflow depth and scale increase</div>
+  <div class="slide-inner" style="position:relative;z-index:2;gap:16px">
+
+    <!-- CONTRACT STRUCTURE TABLE -->
+    <div style="padding:32px 44px 24px;border-radius:18px;background:linear-gradient(145deg,rgba(34,211,238,.03),transparent);border:1px solid rgba(34,211,238,.08)">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px">
+        <div class="ico" style="width:42px;height:42px;border-radius:50%;background:rgba(34,211,238,.12);flex-shrink:0">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div style="font-size:26px;font-weight:800;color:var(--white)">Contract Structure</div>
+      </div>
+
+      <!-- Column headers -->
+      <div style="display:grid;grid-template-columns:270px 1fr 1fr 1fr 1fr;gap:20px;margin-bottom:10px;padding:0 16px">
+        <div></div>
+        <div style="font-size:14px;font-weight:700;color:var(--g2);text-align:center;text-transform:uppercase;letter-spacing:2px">Clinic</div>
+        <div style="font-size:14px;font-weight:700;color:var(--g2);text-align:center;text-transform:uppercase;letter-spacing:2px">ASC / Multi</div>
+        <div style="font-size:14px;font-weight:700;color:var(--g2);text-align:center;text-transform:uppercase;letter-spacing:2px">Hospital</div>
+        <div style="font-size:14px;font-weight:700;color:var(--g2);text-align:center;text-transform:uppercase;letter-spacing:2px">Enterprise</div>
+      </div>
+
+      <!-- Implementation row -->
+      <div style="display:grid;grid-template-columns:270px 1fr 1fr 1fr 1fr;gap:20px;align-items:center;padding:20px 16px;border-radius:12px;background:rgba(34,211,238,.035);margin-bottom:6px">
+        <div>
+          <div style="font-size:18px;font-weight:700;color:var(--teal)">Implementation</div>
+          <div style="font-size:13px;color:var(--g3);margin-top:3px">Workflow design, setup, training, launch</div>
+        </div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">$5k–$15k</div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">$15k–$40k</div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">$40k–$150k</div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">$100k–$300k+</div>
+      </div>
+
+      <!-- Platform License row -->
+      <div style="display:grid;grid-template-columns:270px 1fr 1fr 1fr 1fr;gap:20px;align-items:center;padding:20px 16px;border-radius:12px;background:rgba(255,181,71,.035);margin-bottom:6px">
+        <div>
+          <div style="font-size:18px;font-weight:700;color:var(--amber)">Platform License <span style="font-size:13px;font-weight:500;color:var(--g3)">ARR</span></div>
+          <div style="font-size:13px;color:var(--g3);margin-top:3px">Engine, dashboard, audit, reporting, support</div>
+        </div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">$25k–$45k</div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">$50k–$100k</div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">$150k–$300k</div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">$400k–$1M+</div>
+      </div>
+
+      <!-- Included Volume row -->
+      <div style="display:grid;grid-template-columns:270px 1fr 1fr 1fr 1fr;gap:20px;align-items:center;padding:20px 16px;border-radius:12px;background:rgba(0,229,160,.035);margin-bottom:6px">
+        <div>
+          <div style="font-size:18px;font-weight:700;color:var(--mint)">Included Volume</div>
+          <div style="font-size:13px;color:var(--g3);margin-top:3px">Baseline episodes in annual contract</div>
+        </div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">~1,000</div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">~3,000</div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">~8,000</div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">Negotiated pool</div>
+      </div>
+
+      <!-- Overage row -->
+      <div style="display:grid;grid-template-columns:270px 1fr 1fr 1fr 1fr;gap:20px;align-items:center;padding:20px 16px;border-radius:12px;background:rgba(255,107,107,.035);margin-bottom:6px">
+        <div>
+          <div style="font-size:18px;font-weight:700;color:var(--coral)">Overage / Deeper Workflow</div>
+          <div style="font-size:13px;color:var(--g3);margin-top:3px">Above included volume or intensive tiers</div>
+        </div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">~$4–$8 <span style="font-size:12px;font-weight:400;color:var(--g3)">/ ep</span></div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">~$4–$8 <span style="font-size:12px;font-weight:400;color:var(--g3)">/ ep</span></div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">~$3–$7 <span style="font-size:12px;font-weight:400;color:var(--g3)">/ ep</span></div>
+        <div style="font-size:18px;font-weight:700;color:var(--white);text-align:center">~$2.50–$6 <span style="font-size:12px;font-weight:400;color:var(--g3)">/ ep</span></div>
+      </div>
+
+      <!-- Add-ons row -->
+      <div style="display:grid;grid-template-columns:270px 1fr auto;gap:20px;align-items:center;padding:16px 16px">
+        <div style="font-size:18px;font-weight:700;color:var(--g1)">Add-ons</div>
+        <div style="font-size:15px;color:var(--g3)">Translation, integrations / SSO / API, analytics, governance, premium support</div>
+        <div style="font-size:18px;font-weight:700;color:var(--g1)">+$10k–$250k+ ARR</div>
+      </div>
+    </div>
+
+    <!-- BOTTOM ROW: UNIT ECONOMICS + DISCLAIMER -->
+    <div style="display:grid;grid-template-columns:1.4fr 0.6fr;gap:18px">
+
+      <!-- UNIT ECONOMICS -->
+      <div style="padding:32px 40px;border-radius:16px;background:linear-gradient(145deg,rgba(0,229,160,.035),transparent);border:1px solid rgba(0,229,160,.08);display:flex;align-items:center;gap:36px">
+        <div>
+          <div style="font-size:22px;font-weight:800;color:var(--white);margin-bottom:14px">Unit Economics</div>
+          <div style="padding:18px 28px;border-radius:12px;background:rgba(0,229,160,.06);text-align:center">
+            <div style="font-size:14px;color:var(--g3);margin-bottom:5px">Variable Delivery Cost</div>
+            <div style="font-size:30px;font-weight:700;color:var(--mint)">$0.50–$2.50</div>
+            <div style="font-size:14px;color:var(--g3);margin-top:5px">/ episode</div>
+          </div>
+        </div>
+        <div style="width:1px;height:110px;background:rgba(255,255,255,.06)"></div>
+        <div style="flex:1">
+          <div style="font-size:15px;font-weight:700;color:var(--g2);text-transform:uppercase;letter-spacing:2px;margin-bottom:18px">Gross Margin</div>
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:14px">
+            <div style="font-size:16px;color:var(--g2);width:65px">Early</div>
+            <div style="flex:1;height:24px;border-radius:6px;background:rgba(255,255,255,.04);overflow:hidden"><div style="width:60%;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--teal),rgba(34,211,238,.5))"></div></div>
+            <div style="font-size:21px;font-weight:700;color:var(--teal)">~55–65%</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:16px">
+            <div style="font-size:16px;color:var(--g2);width:65px">At scale</div>
+            <div style="flex:1;height:24px;border-radius:6px;background:rgba(255,255,255,.04);overflow:hidden"><div style="width:75%;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--mint),rgba(0,229,160,.5))"></div></div>
+            <div style="font-size:21px;font-weight:700;color:var(--mint)">~70–80%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DISCLAIMER -->
+      <div style="padding:32px 32px;border-radius:16px;background:linear-gradient(145deg,rgba(255,181,71,.06),rgba(255,181,71,.02));border:1px solid rgba(255,181,71,.15);display:flex;flex-direction:column;justify-content:center">
+        <div style="font-size:18px;font-weight:700;color:var(--amber);margin-bottom:12px">Disclaimer</div>
+        <div style="font-size:15px;color:var(--g1);line-height:1.7">VeraCare is early stage. Pricing, contract design, and reimbursement strategy will evolve as we work with pilot clinics, collect deployment data, and run clinical studies.</div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 12: WHO WE SERVE ===== -->
+<div class="slide">
+  <div class="lbl">Target Market</div>
+  <div class="ttl">Who We Serve</div>
+  <div class="sub">Built for high-throughput procedure settings</div>
+  <div class="slide-inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;flex:1">
+      <div class="card" style="padding:44px 48px;display:flex;flex-direction:column">
+        <div style="font-size:34px;font-weight:700;margin-bottom:28px;display:flex;align-items:center;gap:16px">
+          <div class="ico" style="width:56px;height:56px;border-radius:14px;background:rgba(34,211,238,.1)"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          Surgical Facilities
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px 32px;flex:1;align-content:start">
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Ambulatory Surgery Centers (ASCs)</div>
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Hospital Operating Rooms (ORs)</div>
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Same-day Surgery Units</div>
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Specialty Surgical Hospitals</div>
+        </div>
+      </div>
+      <div class="card" style="padding:44px 48px;display:flex;flex-direction:column">
+        <div style="font-size:34px;font-weight:700;margin-bottom:28px;display:flex;align-items:center;gap:16px">
+          <div class="ico" style="width:56px;height:56px;border-radius:14px;background:rgba(255,107,107,.1)"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--coral)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          Interventional &amp; Lab Suites
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px 32px;flex:1;align-content:start">
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Cath Labs &amp; EP Labs</div>
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Interventional Radiology</div>
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Vascular &amp; Endovascular</div>
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Bronchoscopy Suites</div>
+        </div>
+      </div>
+      <div class="card" style="padding:44px 48px;display:flex;flex-direction:column">
+        <div style="font-size:34px;font-weight:700;margin-bottom:28px;display:flex;align-items:center;gap:16px">
+          <div class="ico" style="width:56px;height:56px;border-radius:14px;background:rgba(0,229,160,.1)"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg></div>
+          Specialty Outpatient Centers
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px 32px;flex:1;align-content:start">
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>GI/Endoscopy &amp; Ophthalmology</div>
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Ortho/Spine &amp; Pain Management</div>
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Urology, ENT, &amp; OB/GYN</div>
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Plastics &amp; Mohs Surgery</div>
+        </div>
+      </div>
+      <div class="card" style="padding:44px 48px;display:flex;flex-direction:column">
+        <div style="font-size:34px;font-weight:700;margin-bottom:28px;display:flex;align-items:center;gap:16px">
+          <div class="ico" style="width:56px;height:56px;border-radius:14px;background:rgba(255,181,71,.1)"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          Procedural Networks &amp; Operators
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px 32px;flex:1;align-content:start">
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Multi-site ASC Operators</div>
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Specialty Management (MSOs)</div>
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Large Specialty Groups</div>
+          <div style="font-size:24px;color:var(--g1);padding-left:24px;position:relative;line-height:1.6"><span style="position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--teal);opacity:.6"></span>Multi-site Procedure Centers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 12: TRACTION ===== -->
+<div class="slide">
+  <div class="glow" style="width:600px;height:600px;background:radial-gradient(circle,rgba(34,211,238,.06),transparent 70%);bottom:-200px;left:-120px"></div>
+  <div class="glow" style="width:400px;height:400px;background:radial-gradient(circle,rgba(0,229,160,.06),transparent 70%);top:-100px;right:-80px"></div>
+  <div class="lbl">Traction</div>
+  <div class="ttl">Early Validation &amp; Market Pull</div>
+  <div class="sub">Customer demand is forming ahead of launch — we're not pushing product, clinics are pulling us in</div>
+  <div class="slide-inner" style="position:relative;z-index:2;justify-content:center;align-items:center">
+    <!-- TOP ROW: 3 big stat cards -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-bottom:32px;width:100%">
+      <div style="text-align:center;padding:48px 36px;border-radius:20px;background:linear-gradient(180deg,rgba(34,211,238,.06),rgba(34,211,238,.015));border:1px solid rgba(34,211,238,.15);display:flex;flex-direction:column;align-items:center;justify-content:center">
+        <div class="ico" style="width:60px;height:60px;border-radius:50%;background:rgba(34,211,238,.12);margin-bottom:18px">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div style="font-size:110px;font-weight:800;color:var(--teal);line-height:1">30</div>
+        <div style="font-size:16px;letter-spacing:5px;color:var(--g1);text-transform:uppercase;margin:16px 0 10px;font-weight:600">Clinic Conversations</div>
+        <div style="font-size:19px;color:var(--g2);line-height:1.5">Deep discovery across clinical and administrative stakeholders</div>
+      </div>
+      <div style="text-align:center;padding:48px 36px;border-radius:20px;background:linear-gradient(180deg,rgba(0,229,160,.06),rgba(0,229,160,.015));border:1px solid rgba(0,229,160,.15);display:flex;flex-direction:column;align-items:center;justify-content:center">
+        <div class="ico" style="width:60px;height:60px;border-radius:50%;background:rgba(0,229,160,.12);margin-bottom:18px">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+        <div style="font-size:110px;font-weight:800;color:var(--mint);line-height:1">2</div>
+        <div style="font-size:16px;letter-spacing:5px;color:var(--g1);text-transform:uppercase;margin:16px 0 10px;font-weight:600">Pilots Launching</div>
+        <div style="font-size:19px;color:var(--g2);line-height:1.5">Implementing in 1 clinic now, 2nd implementation in progress</div>
+      </div>
+      <div style="text-align:center;padding:48px 36px;border-radius:20px;background:linear-gradient(180deg,rgba(255,181,71,.06),rgba(255,181,71,.015));border:1px solid rgba(255,181,71,.15);display:flex;flex-direction:column;align-items:center;justify-content:center">
+        <div class="ico" style="width:60px;height:60px;border-radius:50%;background:rgba(255,181,71,.12);margin-bottom:18px">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <div style="font-size:110px;font-weight:800;color:var(--amber);line-height:1">2</div>
+        <div style="font-size:16px;letter-spacing:5px;color:var(--g1);text-transform:uppercase;margin:16px 0 10px;font-weight:600">University Studies</div>
+        <div style="font-size:19px;color:var(--g2);line-height:1.5">Running studies at large university health systems — collecting clinical data</div>
+      </div>
+    </div>
+    <!-- STAKEHOLDER ENGAGEMENT BAR -->
+    <div style="padding:32px 48px;background:linear-gradient(135deg,rgba(255,255,255,.04),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:18px;width:100%">
+      <div style="font-size:14px;letter-spacing:5px;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:22px;text-align:center">Multi-Stakeholder Engagement Across the Care Ecosystem</div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px">
+        <div style="text-align:center;padding:20px 16px;border-radius:14px;background:rgba(34,211,238,.04);border:1px solid rgba(34,211,238,.08)">
+          <div class="ico" style="width:48px;height:48px;border-radius:50%;background:rgba(34,211,238,.1);margin:0 auto 12px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div style="font-size:22px;font-weight:700;color:var(--white);margin-bottom:4px">Physicians</div>
+          <div style="font-size:16px;color:var(--g2);line-height:1.4">Clinical workflow validation</div>
+        </div>
+        <div style="text-align:center;padding:20px 16px;border-radius:14px;background:rgba(0,229,160,.04);border:1px solid rgba(0,229,160,.08)">
+          <div class="ico" style="width:48px;height:48px;border-radius:50%;background:rgba(0,229,160,.1);margin:0 auto 12px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div style="font-size:22px;font-weight:700;color:var(--white);margin-bottom:4px">Nurses</div>
+          <div style="font-size:16px;color:var(--g2);line-height:1.4">Care coordination needs</div>
+        </div>
+        <div style="text-align:center;padding:20px 16px;border-radius:14px;background:rgba(255,181,71,.04);border:1px solid rgba(255,181,71,.08)">
+          <div class="ico" style="width:48px;height:48px;border-radius:50%;background:rgba(255,181,71,.1);margin:0 auto 12px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <div style="font-size:22px;font-weight:700;color:var(--white);margin-bottom:4px">Administrators</div>
+          <div style="font-size:16px;color:var(--g2);line-height:1.4">Operational &amp; ROI alignment</div>
+        </div>
+        <div style="text-align:center;padding:20px 16px;border-radius:14px;background:rgba(255,107,107,.04);border:1px solid rgba(255,107,107,.08)">
+          <div class="ico" style="width:48px;height:48px;border-radius:50%;background:rgba(255,107,107,.1);margin:0 auto 12px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--coral)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div style="font-size:22px;font-weight:700;color:var(--white);margin-bottom:4px">Receptionists</div>
+          <div style="font-size:16px;color:var(--g2);line-height:1.4">Front-desk workflow pain points</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE: TEAM ===== -->
+<div class="slide">
+  <div class="lbl">Who We Are</div>
+  <div class="ttl">The Team</div>
+  <div class="slide-inner" style="justify-content:center">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:36px;align-items:stretch">
+      <div class="card" style="padding:44px 36px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div style="width:160px;height:160px;border-radius:50%;overflow:hidden;border:3px solid rgba(255,255,255,.12);background:linear-gradient(135deg,rgba(34,211,238,.3),rgba(0,229,160,.2));margin-bottom:18px;flex-shrink:0">
+          <img src="headshot_abhinav.jpg" style="width:100%;height:100%;object-fit:cover" onerror="this.outerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:56px;font-weight:700;color:#94A3B8\'>A</div>'">
+        </div>
+        <div style="font-size:32px;font-weight:700">Abhinav</div>
+        <div style="font-size:14px;letter-spacing:4px;text-transform:uppercase;color:var(--teal);font-weight:600;margin:6px 0 5px">Co-Founder</div>
+        <div style="font-size:17px;color:var(--g1);font-weight:500;margin-bottom:20px">Molecular Biology + Computer Science @ UIUC</div>
+        <ul style="list-style:none;text-align:left;font-size:19px;color:var(--g1);line-height:1.65;width:100%">
+          <li class="bullet bullet-teal">ML research/engineering &amp; app dev @ Ramona Optics + Feinberg SOM</li>
+          <li class="bullet bullet-teal">ML with genomics datasets @ Feinberg SOM</li>
+          <li class="bullet bullet-teal">Experience building ML models, big data analysis apps, and clinical workflows</li>
+          <li class="bullet bullet-teal">Clinical experience &amp; surgery intern @ TMC/Baylor</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:44px 36px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div style="width:160px;height:160px;border-radius:50%;overflow:hidden;border:3px solid rgba(255,255,255,.12);background:linear-gradient(135deg,rgba(255,181,71,.3),rgba(255,107,107,.2));margin-bottom:18px;flex-shrink:0">
+          <img src="headshot_netsh.jpeg" style="width:100%;height:100%;object-fit:cover" onerror="this.outerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:56px;font-weight:700;color:#94A3B8\'>N</div>'">
+        </div>
+        <div style="font-size:32px;font-weight:700">Netsh</div>
+        <div style="font-size:14px;letter-spacing:4px;text-transform:uppercase;color:var(--mint);font-weight:600;margin:6px 0 5px">Co-Founder</div>
+        <div style="font-size:17px;color:var(--g1);font-weight:500;margin-bottom:20px">Data Science + Finance @ UIUC</div>
+        <ul style="list-style:none;text-align:left;font-size:19px;color:var(--g1);line-height:1.65;width:100%">
+          <li class="bullet bullet-mint">Healthcare Private Equity @ Infinitive Capital</li>
+          <li class="bullet bullet-mint">Data Science Intern @ BMO Financial Group</li>
+          <li class="bullet bullet-mint">Operational knowledge combined with business background</li>
+          <li class="bullet bullet-mint">Extensive AI engineering and implementation experience</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:44px 36px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div style="width:160px;height:160px;border-radius:50%;overflow:hidden;border:3px solid rgba(255,255,255,.12);background:linear-gradient(135deg,rgba(255,107,107,.3),rgba(255,181,71,.2));margin-bottom:18px;flex-shrink:0">
+          <img src="headshot_ramiro.png" style="width:100%;height:100%;object-fit:cover" onerror="this.outerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:56px;font-weight:700;color:#94A3B8\'>R</div>'">
+        </div>
+        <div style="font-size:32px;font-weight:700">Ramiro Fernandez II, MD</div>
+        <div style="font-size:14px;letter-spacing:4px;text-transform:uppercase;color:var(--coral);font-weight:600;margin:6px 0 5px">Principal Clinical Advisor</div>
+        <div style="font-size:17px;color:var(--g1);font-weight:500;margin-bottom:20px">Baylor &middot; Northwestern &middot; Cleveland Clinic</div>
+        <ul style="list-style:none;text-align:left;font-size:19px;color:var(--g1);line-height:1.65;width:100%">
+          <li class="bullet bullet-coral">Leading thoracic surgeon &amp; lung transplant specialist with deep perioperative care expertise</li>
+          <li class="bullet bullet-coral">Fellowship-trained across three of the nation's top academic medical centers</li>
+          <li class="bullet bullet-coral">Bridges clinical excellence, research leadership, and surgical innovation to guide VeraCare's vision</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 13: ADVISOR NETWORK ===== -->
+<div class="slide">
+  <div class="glow" style="width:600px;height:600px;background:radial-gradient(circle,rgba(34,211,238,.08),transparent 70%);top:-180px;right:-100px"></div>
+  <div class="glow" style="width:400px;height:400px;background:radial-gradient(circle,rgba(0,229,160,.06),transparent 70%);bottom:-120px;left:-60px"></div>
+  <div class="lbl">Clinical Network</div>
+  <div class="ttl" style="font-size:54px">Advisor Network</div>
+  <div class="sub" style="margin-bottom:12px">A credible clinical support network spanning training levels and care settings</div>
+  <div class="slide-inner" style="position:relative;z-index:2;justify-content:center">
+    <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:36px;align-items:stretch">
+
+      <!-- COLUMN 1: Medical Student Collaborators -->
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:4px">
+          <div class="ico" style="width:48px;height:48px;border-radius:50%;background:rgba(34,211,238,.12);flex-shrink:0">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
+          </div>
+          <div style="font-size:22px;font-weight:700;color:var(--teal);letter-spacing:1px;text-transform:uppercase">Medical Student Collaborators</div>
+        </div>
+        <div style="padding:32px 28px;border-radius:16px;background:linear-gradient(145deg,rgba(34,211,238,.04),transparent);border:1px solid rgba(34,211,238,.1)">
+          <div style="font-size:28px;font-weight:700;color:var(--white);margin-bottom:6px">Kaviamuthan Kanakaraju</div>
+          <div style="font-size:19px;color:var(--teal);font-weight:600;margin-bottom:10px">Carle Illinois College of Medicine</div>
+          <div style="font-size:20px;color:var(--g1);line-height:1.5">Engineering-integrated medical training with deep exposure to health-tech innovation</div>
+        </div>
+        <div style="padding:32px 28px;border-radius:16px;background:linear-gradient(145deg,rgba(34,211,238,.04),transparent);border:1px solid rgba(34,211,238,.1)">
+          <div style="font-size:28px;font-weight:700;color:var(--white);margin-bottom:6px">Senthooran Kalidoss</div>
+          <div style="font-size:19px;color:var(--teal);font-weight:600;margin-bottom:10px">UChicago Pritzker School of Medicine</div>
+          <div style="font-size:20px;color:var(--g1);line-height:1.5">Clinical perspective from one of the nation's top research-driven medical schools</div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2: Doctor Advisors -->
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:4px">
+          <div class="ico" style="width:48px;height:48px;border-radius:50%;background:rgba(255,181,71,.12);flex-shrink:0">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div style="font-size:22px;font-weight:700;color:var(--amber);letter-spacing:1px;text-transform:uppercase">Doctor Advisors</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+          <!-- Doctor 1 -->
+          <div style="padding:28px 24px;border-radius:16px;background:linear-gradient(145deg,rgba(255,181,71,.04),transparent);border:1px solid rgba(255,181,71,.1)">
+            <div style="font-size:25px;font-weight:700;color:var(--white);margin-bottom:5px">Dr. Mallika Rajendran, MD</div>
+            <div style="font-size:17px;color:var(--amber);font-weight:600;margin-bottom:8px">Obstetrics &amp; Gynecology</div>
+            <div style="font-size:19px;color:var(--g1);line-height:1.5">Advice on hospital systems, large hospital operations &amp; procedures</div>
+          </div>
+          <!-- Doctor 2 -->
+          <div style="padding:28px 24px;border-radius:16px;background:linear-gradient(145deg,rgba(255,181,71,.04),transparent);border:1px solid rgba(255,181,71,.1)">
+            <div style="font-size:25px;font-weight:700;color:var(--white);margin-bottom:5px">Jayakrishna Chintanaboina, MD, MPH, FASGE</div>
+            <div style="font-size:17px;color:var(--amber);font-weight:600;margin-bottom:8px">Interventional Gastroenterologist</div>
+            <div style="font-size:19px;color:var(--g1);line-height:1.5">Advice on private clinic operations &amp; procedural workflows</div>
+          </div>
+          <!-- Doctor 3 -->
+          <div style="padding:28px 24px;border-radius:16px;background:linear-gradient(145deg,rgba(255,181,71,.04),transparent);border:1px solid rgba(255,181,71,.1)">
+            <div style="font-size:25px;font-weight:700;color:var(--white);margin-bottom:5px">Dr. Nhila Jagadeesan, MD</div>
+            <div style="font-size:17px;color:var(--amber);font-weight:600;margin-bottom:8px">Internist &middot; Physician Advisor</div>
+            <div style="font-size:19px;color:var(--g1);line-height:1.5">Internal medicine perspective on care coordination &amp; patient management</div>
+          </div>
+          <!-- Doctor 4 (Resident) -->
+          <div style="padding:28px 24px;border-radius:16px;background:linear-gradient(145deg,rgba(255,181,71,.04),transparent);border:1px solid rgba(255,181,71,.1)">
+            <div style="font-size:25px;font-weight:700;color:var(--white);margin-bottom:5px">Aishwarya Reddy</div>
+            <div style="font-size:17px;color:var(--amber);font-weight:600;margin-bottom:8px">Northwestern &middot; PGY-1 Resident</div>
+            <div style="font-size:19px;color:var(--g1);line-height:1.5">Frontline perspective on perioperative workflows, patient handoffs &amp; care coordination</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div style="margin-top:28px;padding:20px 48px;background:linear-gradient(135deg,rgba(34,211,238,.05),rgba(255,181,71,.04));border:1px solid rgba(34,211,238,.1);border-radius:14px;display:flex;align-items:center;justify-content:center;gap:48px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:12px;height:12px;border-radius:50%;background:var(--teal)"></div>
+        <span style="font-size:18px;color:var(--g1)"><strong style="color:var(--white)">2</strong> Medical Students</span>
+      </div>
+      <div style="width:1px;height:28px;background:rgba(255,255,255,.1)"></div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:12px;height:12px;border-radius:50%;background:var(--amber)"></div>
+        <span style="font-size:18px;color:var(--g1)"><strong style="color:var(--white)">4</strong> Doctor Advisors</span>
+      </div>
+      <div style="width:1px;height:28px;background:rgba(255,255,255,.1)"></div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="font-size:18px;color:var(--g1)">Spanning <strong style="color:var(--teal)">hospitals</strong>, <strong style="color:var(--amber)">private clinics</strong>, &amp; <strong style="color:var(--teal)">academic medicine</strong></span>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- ===== SLIDE 14: CTA ===== -->
+<div class="slide" style="align-items:center;justify-content:center;text-align:center">
+  <div class="glow" style="width:900px;height:900px;background:radial-gradient(circle,rgba(34,211,238,.1),transparent 70%);top:-300px;left:50%;transform:translateX(-50%)"></div>
+  <div class="glow" style="width:500px;height:500px;background:radial-gradient(circle,rgba(0,229,160,.07),transparent 70%);bottom:-120px;right:-80px"></div>
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;max-width:1400px">
+    <div style="font-size:82px;font-weight:800;line-height:1.1;margin-bottom:60px;letter-spacing:-2px;background:linear-gradient(135deg,#fff 30%,var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Join Us in Saving Lives</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:60px;width:100%;max-width:1100px">
+      <div style="text-align:center;padding:52px 44px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)">
+        <div style="font-size:32px;font-weight:700;margin-bottom:12px">Abhinav Bachu</div>
+        <div style="font-size:24px;color:var(--teal);font-weight:500">abhinav.bachu@tryveracare.com</div>
+      </div>
+      <div style="text-align:center;padding:52px 44px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)">
+        <div style="font-size:32px;font-weight:700;margin-bottom:12px">Netsh Sasikumar</div>
+        <div style="font-size:24px;color:var(--teal);font-weight:500">netsh.sasikumar@tryveracare.com</div>
+      </div>
+    </div>
+    <div style="font-size:34px;font-weight:600;color:var(--teal);letter-spacing:2px">tryveracare.com</div>
+  </div>
+  <div class="footer"><span class="conf">Confidential</span><div class="logo-area"><img src="logo_transparent.png" onerror="this.style.display='none'"><span>VeraCare</span></div></div>
+</div>
+
+<!-- APPENDIX REMOVED -->
+<script>
+(function(){
+  var slides=document.querySelectorAll('.slide');
+  function resize(){
+    var vw=window.innerWidth;
+    var s=Math.min(1,(vw-32)/1920);
+    slides.forEach(function(el){
+      el.style.transform='scale('+s+')';
+      el.style.marginBottom=(-(1080*(1-s))+16)+'px';
+    });
+  }
+  resize();
+  window.addEventListener('resize',resize);
+
+  function drawGtm(){
+    var w=document.getElementById('gtm-wrap');
+    if(!w)return;
+    var svg=document.getElementById('gtm-svg');
+    svg.setAttribute('viewBox','0 0 '+w.offsetWidth+' '+w.offsetHeight);
+    function pos(el){
+      var x=0,y=0,c=el;
+      while(c&&c!==w){x+=c.offsetLeft;y+=c.offsetTop;c=c.offsetParent;}
+      return{cx:x+el.offsetWidth/2,cy:y+el.offsetHeight/2};
+    }
+    var d1=pos(document.getElementById('gd1'));
+    var d3=pos(document.getElementById('gd3'));
+    var d6=pos(document.getElementById('gd6'));
+    var d7=pos(document.getElementById('gd7'));
+    var d8=pos(document.getElementById('gd8'));
+    var centerY=d1.cy;
+    var n4=document.getElementById('gn4');
+    var n5=document.getElementById('gn5');
+    var d4target=centerY-165;
+    var d4h=n4.offsetHeight;
+    n4.style.top=(d4target-29-44-(d4h-58-44))+'px';
+    var d5target=centerY+165;
+    n5.style.top=(d5target-29)+'px';
+    var d4=pos(document.getElementById('gd4'));
+    var d5=pos(document.getElementById('gd5'));
+    document.getElementById('gl-trunk').setAttribute('x1',d1.cx);
+    document.getElementById('gl-trunk').setAttribute('y1',d1.cy);
+    document.getElementById('gl-trunk').setAttribute('x2',d3.cx);
+    document.getElementById('gl-trunk').setAttribute('y2',d3.cy);
+    document.getElementById('gl-upper').setAttribute('points',d3.cx+','+d3.cy+' '+d4.cx+','+d4.cy+' '+d6.cx+','+d6.cy);
+    document.getElementById('gl-lower').setAttribute('points',d3.cx+','+d3.cy+' '+d5.cx+','+d5.cy+' '+d6.cx+','+d6.cy);
+    document.getElementById('gl-tail').setAttribute('x1',d6.cx);
+    document.getElementById('gl-tail').setAttribute('y1',d6.cy);
+    document.getElementById('gl-tail').setAttribute('x2',d8.cx);
+    document.getElementById('gl-tail').setAttribute('y2',d8.cy);
+    var cont=document.getElementById('gl-continue');
+    cont.setAttribute('x1',d8.cx+29);
+    cont.setAttribute('y1',d8.cy);
+    cont.setAttribute('x2',d8.cx+120);
+    cont.setAttribute('y2',d8.cy);
+
+    var dateBadge=document.getElementById('gdate45');
+    if(dateBadge){
+      var badgeH=dateBadge.offsetHeight;
+      var midY=(d4.cy+d5.cy)/2;
+      dateBadge.style.top=(midY-badgeH/2)+'px';
+      dateBadge.style.left=(d4.cx-dateBadge.offsetWidth/2)+'px';
+      var bpos=pos(dateBadge.children[0]);
+      var ld4=document.getElementById('gl-date4');
+      ld4.setAttribute('x1',bpos.cx);ld4.setAttribute('y1',midY-badgeH/2);
+      ld4.setAttribute('x2',d4.cx);ld4.setAttribute('y2',d4.cy+29);
+      var ld5=document.getElementById('gl-date5');
+      ld5.setAttribute('x1',bpos.cx);ld5.setAttribute('y1',midY+badgeH/2);
+      ld5.setAttribute('x2',d5.cx);ld5.setAttribute('y2',d5.cy-29);
+    }
+  }
+  setTimeout(drawGtm,120);
+  window.addEventListener('resize',function(){setTimeout(drawGtm,120);});
+})();
+</script>
+</body>
+</html>
