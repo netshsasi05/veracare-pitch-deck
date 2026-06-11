@@ -1,13 +1,14 @@
-import subprocess, os, re, tempfile
+import os, re
+from playwright.sync_api import sync_playwright
 from pptx import Presentation
 from pptx.util import Emu
 
-DECK_DIR = "/Users/Netsh/Downloads/pitch deck"
+DECK_DIR = os.path.dirname(os.path.abspath(__file__))
 HTML_FILE = os.path.join(DECK_DIR, "VeraCare_Deck.html")
 SCREENSHOT_DIR = os.path.join(DECK_DIR, "slide_screenshots")
-OUTPUT_PPTX = os.path.join(DECK_DIR, "VeraCare_Deck_V2.pptx")
-CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+OUTPUT_PPTX = os.path.join(DECK_DIR, "VeraCare_Deck.pptx")
 SLIDE_W, SLIDE_H = 1920, 1080
+SCALE = 2  # render at 2x for crisp screenshots
 
 os.makedirs(SCREENSHOT_DIR, exist_ok=True)
 
@@ -22,8 +23,15 @@ slide_blocks = [s for s in slides if s.strip().startswith('<div class="slide"')]
 
 print(f"Found {len(slide_blocks)} slides")
 
-for i, slide_html in enumerate(slide_blocks):
-    single_html = f"""<!DOCTYPE html>
+with sync_playwright() as p:
+    browser = p.chromium.launch()
+    page = browser.new_page(
+        viewport={"width": SLIDE_W, "height": SLIDE_H},
+        device_scale_factor=SCALE,
+    )
+
+    for i, slide_html in enumerate(slide_blocks):
+        single_html = f"""<!DOCTYPE html>
 <html lang="en">
 {head_block}
 <style>
@@ -35,33 +43,22 @@ html,body{{margin:0!important;padding:0!important;overflow:hidden!important;back
 </body>
 </html>"""
 
-    tmp_path = os.path.join(SCREENSHOT_DIR, f"_tmp_slide_{i+1}.html")
-    with open(tmp_path, "w") as f:
-        f.write(single_html)
+        tmp_path = os.path.join(DECK_DIR, f"_tmp_slide_{i+1}.html")
+        with open(tmp_path, "w") as tf:
+            tf.write(single_html)
 
-    out_path = os.path.join(SCREENSHOT_DIR, f"slide_{i+1:02d}.png")
+        out_path = os.path.join(SCREENSHOT_DIR, f"slide_{i+1:02d}.png")
+        page.goto(f"file://{tmp_path}", wait_until="networkidle")
+        page.wait_for_timeout(400)
+        page.screenshot(path=out_path, clip={"x": 0, "y": 0, "width": SLIDE_W, "height": SLIDE_H})
+        os.remove(tmp_path)
 
-    cmd = [
-        CHROME,
-        "--headless=new",
-        "--no-sandbox",
-        "--disable-gpu",
-        "--hide-scrollbars",
-        "--force-device-scale-factor=1",
-        f"--window-size={SLIDE_W},{SLIDE_H}",
-        f"--screenshot={out_path}",
-        "--virtual-time-budget=5000",
-        "--run-all-compositor-stages-before-draw",
-        f"file://{tmp_path}",
-    ]
+        if os.path.exists(out_path) and os.path.getsize(out_path) > 1000:
+            print(f"  Captured slide {i+1}")
+        else:
+            print(f"  WARNING: slide {i+1} may have failed")
 
-    subprocess.run(cmd, capture_output=True, timeout=30)
-    os.remove(tmp_path)
-
-    if os.path.exists(out_path) and os.path.getsize(out_path) > 1000:
-        print(f"  Captured slide {i+1}")
-    else:
-        print(f"  WARNING: slide {i+1} may have failed")
+    browser.close()
 
 print("\nBuilding PPTX...")
 
@@ -77,11 +74,7 @@ for i in range(len(slide_blocks)):
         print(f"  Skipping slide {i+1} - no screenshot")
         continue
     slide = prs.slides.add_slide(blank_layout)
-    slide.shapes.add_picture(
-        img_path,
-        Emu(0), Emu(0),
-        prs.slide_width, prs.slide_height
-    )
+    slide.shapes.add_picture(img_path, Emu(0), Emu(0), prs.slide_width, prs.slide_height)
     print(f"  Added slide {i+1}")
 
 prs.save(OUTPUT_PPTX)
